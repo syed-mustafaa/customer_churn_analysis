@@ -10,7 +10,7 @@ def run_eda(input_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     
     # Set style
-    sns.set_theme(style="whitegrid")
+    sns.set_theme(style="darkgrid")
 
     # 1. Overall Churn Distribution
     plt.figure(figsize=(6, 6))

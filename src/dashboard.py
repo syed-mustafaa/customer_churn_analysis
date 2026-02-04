@@ -119,6 +119,14 @@ with c4:
 # --- Data View ---
 with st.expander("View Filtered Raw Data"):
     st.dataframe(filtered_df)
+    
+    csv = filtered_df.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="Download Data as CSV",
+        data=csv,
+        file_name='filtered_churn_data.csv',
+        mime='text/csv',
+    )
 
 st.markdown("---")
 st.markdown("**Insights**: Month-to-month contracts and Electronic Check payments show higher churn rates.")
