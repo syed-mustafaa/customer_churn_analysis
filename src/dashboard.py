@@ -39,6 +39,7 @@ payment_filter = st.sidebar.multiselect(
 
 st.sidebar.markdown("---")
 st.sidebar.info("Created by [Mustafaa](https://github.com/syed-mustafaa) for Customer Churn Analysis Project")
+st.sidebar.caption("Data Source: IBM / Kaggle Telco Churn Dataset")
 
 filtered_df = df[
     (df["Contract"].isin(contract_filter)) &
