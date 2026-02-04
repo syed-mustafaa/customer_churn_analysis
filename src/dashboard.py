@@ -37,6 +37,9 @@ payment_filter = st.sidebar.multiselect(
     default=df["PaymentMethod"].unique()
 )
 
+st.sidebar.markdown("---")
+st.sidebar.info("Created by [Mustafaa](https://github.com/syed-mustafaa) for Customer Churn Analysis Project")
+
 filtered_df = df[
     (df["Contract"].isin(contract_filter)) &
     (df["PaymentMethod"].isin(payment_filter))
