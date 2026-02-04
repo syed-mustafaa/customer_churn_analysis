@@ -116,6 +116,13 @@ with c4:
     else:
         st.write("Tenure Group feature missing.")
 
+# Row 3
+st.subheader("Correlation Heatmap")
+numeric_df = filtered_df.select_dtypes(include=['number'])
+corr = numeric_df.corr()
+fig_corr = px.imshow(corr, text_auto=True, aspect="auto", color_continuous_scale="RdBu_r", title="Correlation Matrix")
+st.plotly_chart(fig_corr, use_container_width=True)
+
 # --- Data View ---
 with st.expander("View Filtered Raw Data"):
     st.dataframe(filtered_df)
