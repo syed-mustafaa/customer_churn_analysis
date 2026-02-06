@@ -64,7 +64,3 @@ customer_churn_analysis/
 - **Tenure**: New customers (0-12 months) are at highest risk.
 - **High Risk**: Customers with high monthly charges on month-to-month contracts need immediate retention offers.
 
-### 6. Recommendations
-- **Incentivize Long-term Contracts**: Offer discounts for 1-2 year commitments.
-- **Target New Customers**: Implementation a 90-day onboarding/success program.
-- **Payment Migration**: Encourage auto-pay methods to reduce churn from manual payments.
